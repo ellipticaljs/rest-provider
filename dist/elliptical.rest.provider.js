@@ -46,6 +46,7 @@
       _classCallCheck(this, RestProvider);
 
       this.$provider = $provider;
+      this.baseEndpoint=$provider.protocol + '://' + $provider.host + ':' + ($provider.port || 80) + $provider.path;
     }
 
     _createClass(RestProvider, [{
